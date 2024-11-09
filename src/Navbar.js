@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { auth } from './firebase';
-import './Navbar.css'; // Importing the CSS file for styling
+import './Navbar.css';
 
 const Navbar = ({ role }) => {
   const navigate = useNavigate();
@@ -21,8 +21,11 @@ const Navbar = ({ role }) => {
 
   return (
     <nav className="navbar">
+      {/* Updated line: Wrapping the iLearn logo with Link */}
       <div className="navbar-logo">
-        <h1>iLearn</h1>
+        <Link to="/" className="navbar-logo-link">
+          <h1>iLearn</h1>
+        </Link>
       </div>
       <div className="navbar-links">
         <Link to="/home" className="navbar-link">Home</Link>

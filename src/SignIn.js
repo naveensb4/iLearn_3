@@ -3,6 +3,7 @@ import { auth, db } from './firebase';
 import { GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
+import './SignIn.css';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -56,41 +57,43 @@ const SignIn = () => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '50px' }}>
-      <h1>Welcome to iLearn</h1>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      <div style={{ marginBottom: '20px' }}>
-        <button onClick={signInWithGoogle} style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer' }}>
+    <div className="signin-container">
+      <div className="signin-card">
+        <h1 className="signin-title">Welcome to iLearn</h1>
+        {error && <p className="error-message">{error}</p>}
+        <button onClick={signInWithGoogle} className="google-signin-button">
+          <img src="google-icon.png" alt="Google" className="google-icon" />
           Sign In with Google
         </button>
-      </div>
-      <div style={{ marginBottom: '20px', width: '300px' }}>
-        <h2>{isRegistering ? 'Register' : 'Sign In'} with Email</h2>
+        <div className="divider">
+          <span>or</span>
+        </div>
+        <h2 className="email-signin-title">{isRegistering ? 'Register' : 'Sign In'} with Email</h2>
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          style={{ width: '100%', padding: '10px', marginBottom: '10px' }}
+          className="input-field"
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          style={{ width: '100%', padding: '10px', marginBottom: '10px' }}
+          className="input-field"
         />
         <button
           onClick={handleSignInOrRegister}
-          style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer', width: '100%' }}
+          className="email-signin-button"
         >
           {isRegistering ? 'Register' : 'Sign In'}
         </button>
         <button
           onClick={() => setIsRegistering(!isRegistering)}
-          style={{ marginTop: '10px', fontSize: '14px', color: 'blue', cursor: 'pointer', border: 'none', background: 'none' }}
+          className="switch-button"
         >
-          {isRegistering ? 'Switch to Sign In' : 'Switch to Register'}
+          {isRegistering ? 'Already have an account? Sign In' : 'Need an account? Register'}
         </button>
       </div>
     </div>
