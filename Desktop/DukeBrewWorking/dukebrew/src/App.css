@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.club-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.club-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.club-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar button:hover {
+  background-color: #ddd;
+}
+.club-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.club-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  text-align: center;
+}
+
+.club-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.club-logo,
+.club-detail-logo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.club-detail {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.members-section {
+  margin-top: 30px;
+}

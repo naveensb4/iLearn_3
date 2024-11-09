@@ -1,0 +1,58 @@
+/* src/components/ManageClubs.css */
+
+.manage-clubs-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    background-color: #012169; /* Duke Navy Blue */
+    border-radius: 10px;
+  }
+  
+  .club-management {
+    background-color: white;
+    color: #012169;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3, h4 {
+    color: #00539B; /* Duke Royal Blue */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #00539B; /* Duke Royal Blue */
+    color: white;
+  }
+  
+  .approve-btn, .reject-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .reject-btn {
+    background-color: #dc3545; /* Red */
+  }
+  
+  .approve-btn:hover, .reject-btn:hover {
+    opacity: 0.9;
+  }
+  

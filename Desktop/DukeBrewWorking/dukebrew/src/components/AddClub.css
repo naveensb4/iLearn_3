@@ -1,0 +1,42 @@
+/* src/components/AddClub.css */
+
+.add-club-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-club-container h2 {
+    color: #012169; /* Duke Navy Blue */
+  }
+  
+  .add-club-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-club-container input, 
+  .add-club-container textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-club-container button {
+    padding: 10px 20px;
+    background-color: #00539B; /* Duke Royal Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-club-container button:hover {
+    background-color: #003f7f; /* Slightly darker blue */
+  }
+  

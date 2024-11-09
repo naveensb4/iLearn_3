@@ -1,0 +1,88 @@
+/* src/components/UserProfile.css */
+
+/* General container for the profile page */
+.user-profile-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white; /* Set container background to white */
+    color: #012169; /* Duke Navy Blue for the text */
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Profile Image Styling */
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 4px solid #00539B; /* Duke Royal Blue */
+  }
+  
+  /* Placeholder for when there's no profile image */
+  .profile-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #00539B; /* Duke Royal Blue */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Profile Name Styling */
+  .profile-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #012169; /* Duke Navy Blue */
+  }
+  
+  /* General styling for the profile details */
+  .profile-details {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+  
+  .profile-details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #012169; /* Duke Navy Blue */
+  }
+  
+  /* Styling for the LinkedIn link */
+  .profile-link {
+    color: #00539B; /* Duke Royal Blue */
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .profile-link:hover {
+    color: #004080;
+  }
+  
+  /* Button for scheduling a coffee chat */
+  .coffee-chat-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #00539B; /* Duke Royal Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .coffee-chat-button:hover {
+    background-color: #004080;
+  }
+  

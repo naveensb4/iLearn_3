@@ -1,0 +1,109 @@
+/* HomePage.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.homepage-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 300;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+.homepage-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.homepage-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.homepage-description {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  font-weight: 300;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.homepage-cta {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.homepage-cta:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.homepage-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #1a1a1a, #2c2c2c);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .homepage-title {
+    font-size: 2.5rem;
+  }
+  
+  .homepage-description {
+    font-size: 1rem;
+  }
+}

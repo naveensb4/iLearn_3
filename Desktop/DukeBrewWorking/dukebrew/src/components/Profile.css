@@ -1,0 +1,104 @@
+/* src/components/Profile.css */
+
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white; /* White background */
+    color: #012169; /* Duke Navy Blue text */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .profile-info {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .profile-edit-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .save-button,
+  .cancel-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .save-button {
+    background-color: #00539b; /* Duke Royal Blue */
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #004080; /* Darker Duke Blue */
+  }
+  
+  .cancel-button {
+    background-color: #dc3545; /* Bootstrap Danger */
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c82333;
+  }
+  
+  .profile-details p {
+    margin-bottom: 10px;
+  }
+  
+  .profile-link {
+    color: #00539b; /* Duke Royal Blue for links */
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .profile-link:hover {
+    color: #004080;
+  }
+  
+  .edit-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #00539b; /* Duke Royal Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background-color: #004080; /* Darker Duke Blue */
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #dc3545; /* Bootstrap Danger */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+  

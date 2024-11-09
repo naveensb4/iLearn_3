@@ -1,0 +1,106 @@
+/* src/components/Home.css */
+
+/* Applying Duke Navy Blue and Duke Royal Blue with white text for contrast */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern font choice */
+    background-color: #012169; /* Duke Navy Blue */
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-container {
+    text-align: center;
+    padding: 40px 20px; /* Adjusted padding for better spacing */
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text for the header */
+    font-weight: 700; /* Bold and modern font weight */
+  }
+  
+  /* Clubs heading styling */
+  .clubs-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffffff; /* White text for the subheading */
+    font-weight: 500;
+    letter-spacing: 1.5px; /* Added letter spacing for elegance */
+  }
+  
+  /* Clubs grid styling */
+  .club-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display clubs in 4 columns */
+    gap: 25px;
+    padding: 0 20px;
+  }
+  
+  /* Individual club card styling */
+  .club-card {
+    background-color: #ffffff; /* White background for contrast */
+    color: #012169; /* Duke Navy Blue text */
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow for a modern look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Pointer cursor for interaction */
+  }
+  
+  /* Hover effect for club cards */
+  .club-card:hover {
+    transform: translateY(-8px); /* Smooth upward hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  /* Club logo image styling */
+  .club-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 50%; /* Circular logo for a sleek look */
+    border: 3px solid #00539B; /* Duke Royal Blue border for the logo */
+  }
+  
+  /* Club name styling */
+  .club-name {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #00539B; /* Duke Royal Blue for club names */
+  }
+  
+  /* Club link (or CTA) styling */
+  .club-link {
+    color: #00539B; /* Duke Royal Blue for links */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .club-link:hover {
+    text-decoration: underline;
+    color: #003f77; /* Slightly darker on hover for emphasis */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 1200px) {
+    .club-list {
+      grid-template-columns: repeat(3, 1fr); /* 3 clubs per row for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .club-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 clubs per row for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .club-list {
+      grid-template-columns: 1fr; /* 1 club per row for mobile */
+    }
+  }

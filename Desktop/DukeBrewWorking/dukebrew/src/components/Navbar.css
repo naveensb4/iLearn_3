@@ -1,0 +1,64 @@
+/* src/components/Navbar.css */
+
+/* Styling the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #012169; /* Duke Navy Blue */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Left section (Home) */
+  .navbar-left {
+    flex: 1;
+  }
+  
+  /* Center section (Admin option, if applicable) */
+  .navbar-center {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Right section (Profile) */
+  .navbar-right {
+    flex: 1;
+    text-align: right;
+  }
+  
+  /* Styling for the nav buttons */
+  .nav-button {
+    background-color: #00539B; /* Duke Royal Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the nav buttons */
+  .nav-button:hover {
+    background-color: #004080; /* Darker blue on hover */
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .navbar-center, .navbar-right {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  
